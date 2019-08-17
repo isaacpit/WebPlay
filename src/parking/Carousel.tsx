@@ -9,12 +9,16 @@ interface CarouselContainerProps {
 }
 
 const CarouselSlot = styled.div<CarouselSlotProps>`
+  display: flex;
   flex: 1 0 100%;
+  flex-direction: column
   flex-basis: 80%;
   margin-right: 20px;
   order: ${(props) => props.order};
   background-color: #dd3388
   height: 300px
+  justify-content: center
+  align-items: center
 `
 
 const CarouselContainer = styled.div<CarouselContainerProps>`
@@ -28,6 +32,11 @@ const CarouselContainer = styled.div<CarouselContainerProps>`
     return 'translateX(0%)'
   }};
 `
+
+// class CarouselSlot extends Component {
+
+// }
+
 export  {
   CarouselSlot,
   CarouselContainer

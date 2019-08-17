@@ -94,8 +94,8 @@ export default class ParkingHome extends React.Component<ParkingHomeProps, Parki
               key={idx}
               order={this.getOrder(idx)}
             >
+              <img height={200} src={"https://dummyimage.com/640x4:3"}/>
               {elem}
-
             </CarouselSlot> 
           ))}
 

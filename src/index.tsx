@@ -14,9 +14,9 @@ import ParkingHome from './parking/ParkingHome';
 
 const items = 
 [
-<li>item0</li>, 
-<li>item1</li>,
-<li>item2</li>,
+<h2>item0</h2>, 
+<h2>item1</h2>,
+<h2>item2</h2>,
 
 ]
 

@@ -19,5 +19,8 @@ export default () => (
     <h1>
       <Link to="/parking/navbar">NavBar</Link>
     </h1>
+    <h1>
+      <a href="/parking/home">ParkingHome</a>
+    </h1>
   </div>
 )

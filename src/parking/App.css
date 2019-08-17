@@ -55,6 +55,34 @@
   background: #00b7f5;
 }
 
+.carousel-container {
+  color: black;
+  background-color: green;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content:  */
+  /* overflow: hidden; */
+}
+
+.carousel-container .carousel-slot {
+  /* height: 100%; */
+  /* display: flex; */
+  /* background-color: #3ecfff;
+  /* flex-direction: row; 
+  margin: 0 0 20px 20px;
+  width: 100%;
+  overflow: hidden; */
+
+  flex: 1 0 100%;
+  flex-basis: 80%;
+  margin-right: 20px;
+
+}
+
+
+
+
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
@@ -78,3 +106,4 @@
     border-bottom: none;
   }
 }
+

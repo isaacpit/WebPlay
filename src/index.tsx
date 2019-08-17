@@ -10,6 +10,15 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from './parking/Home';
 import App from './parking/App';
 import NavBar from "./parking/NavBar";
+import ParkingHome from './parking/ParkingHome';
+
+const items = 
+[
+<li>item0</li>, 
+<li>item1</li>,
+<li>item2</li>,
+
+]
 
 const AppContainer = () => (
   <BrowserRouter>
@@ -19,6 +28,7 @@ const AppContainer = () => (
       <Route path="/parking/Column2" component={Column2} />
       <Route path="/parking/Column3" render={(props) => <Column3 {...props} title={"some title"} />}/> 
       <Route path="/parking/navbar" render={(props) => <NavBar {...props} />}/>
+      <Route path="/parking/home" render={(props) => <ParkingHome {...props} children={items} />}/>
     </div>
   </BrowserRouter>
 );

@@ -7,49 +7,29 @@ import { Link }  from "react-router-dom";
 
 
 type NavBarProps = {
-    // title: string,
-    // paragraph?: string  // the paragraph is optional
+  // title: string,
+  // paragraph?: string  // the paragraph is optional
   }
   
 
 class NavBar extends React.Component<NavBarProps> {
-    constructor(props: NavBarProps) {
-        super(props);
+  constructor(props: NavBarProps) {
+    super(props);
 
-        
-    }
+  
+  }
 
+  render() {
+  return (
 
-//     const Button = styled.button`
-
-//     background: black;
-//     border: none;
-//     color: white;
-//     outline: none;
-
-//     ${props => props.add && css`
-//         background: palevioletred;
-//         color: white;
-//     `};
-
-//     ${props => props.delete && css`
-//         background: palevioletred;
-//         color: white;
-//     `};
-
-// `;
-
-    render() {
-        return (
-
-        <ul className="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        );
-    }
+    <ul className="navigation">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Service">Services</a></li>
+    <li><a href="#Email">Email</a></li>
+    {/* <li><a href="#">Contact</a></li> */}
+    </ul>
+  );
+  }
 }
 
 

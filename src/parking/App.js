@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './../logo.svg';
+// import newLogo from "./../movie.png";
 import './App.css';
 // import { Column, Row } from "simple-flexbox";
 

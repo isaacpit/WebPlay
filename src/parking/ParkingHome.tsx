@@ -78,11 +78,7 @@ export default class ParkingHome extends React.Component<ParkingHomeProps, Parki
   return (
     <div style={{overflow: "hidden"}}>
         <NavBar />
-        {/* <div className="carousel-container">
-          <div className="carousel-slot">item 1</div>
-          <div className="carousel-slot">item 2</div>
-          <div className="carousel-slot">item 3</div>
-        </div> */}
+        
         <div>
           "position: " {this.state.position} <br/>
           "sliding: " {this.state.sliding === true ? "true" : "false"}
@@ -94,7 +90,8 @@ export default class ParkingHome extends React.Component<ParkingHomeProps, Parki
               key={idx}
               order={this.getOrder(idx)}
             >
-              <img height={200} src={"https://dummyimage.com/640x4:3"}/>
+
+              <img height={200} style={styles.imgStyle} src={"https://dummyimage.com/640x4:3"} />
               {elem}
             </CarouselSlot> 
           ))}
@@ -107,6 +104,16 @@ export default class ParkingHome extends React.Component<ParkingHomeProps, Parki
   
   );
   }
+}
+
+const styles = {
+  all: {
+    padding: "20px"
+  },
+  imgStyle: {
+    padding: "20px",
+  }
+  
 }
 
 

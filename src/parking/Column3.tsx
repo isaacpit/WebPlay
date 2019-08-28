@@ -20,46 +20,12 @@ class Column3 extends React.Component<Column3Props> {
   }
 
 
-//     const Button = styled.button`
-
-//     background: black;
-//     border: none;
-//     color: white;
-//     outline: none;
-
-//     ${props => props.add && css`
-//         background: palevioletred;
-//         color: white;
-//     `};
-
-//     ${props => props.delete && css`
-//         background: palevioletred;
-//         color: white;
-//     `};
-
-// `;
-
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Edit <code>src/App.js</code> and save to reload.
-      //     </p>
-      //     <a
-      //       className="App-link"
-      //       href="https://reactjs.org"
-      //       target="_blank"
-      //       rel="noopener noreferrer"
-      //     >
-      //       Learn React
-      //     </a>
-      //   </header>
-      // </div>
+      
       <Column flexGrow={1}>
-        <Row horizontal='center'>
-          <h1>HEADER</h1>
+        <Row  horizontal='center'>
+          <h1 >HEADER</h1>
           
         </Row>
         <Row vertical='center'>

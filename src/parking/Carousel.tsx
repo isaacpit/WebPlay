@@ -14,11 +14,13 @@ const CarouselSlot = styled.div<CarouselSlotProps>`
   flex-direction: column
   flex-basis: 80%;
   margin-right: 20px;
+  // padding-left: 20px;
   order: ${(props) => props.order};
-  background-color: #dd3388
+  background-color: #D7CEC7
   height: 300px
   justify-content: center
-  align-items: center
+  align-items: flex-start
+  border-radius: 7px
 `
 
 const CarouselContainer = styled.div<CarouselContainerProps>`
@@ -26,7 +28,7 @@ const CarouselContainer = styled.div<CarouselContainerProps>`
   margin: 0 0 20px 20px;
   // overflow: hidden;
 
-  transition: ${(props) => props.sliding ? 'none' : 'transform 1s ease'};
+  transition: ${(props) => props.sliding ? 'none' : 'transform 1.25s ease'};
   transform: ${(props) => {
     if (!props.sliding) return 'translateX(calc(-80% - 20px))'
     return 'translateX(0%)'
